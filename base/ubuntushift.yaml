@@ -5,7 +5,6 @@ metadata:
   label:
     name: ubuntu
 spec:
-  securityContext:
   containers:
   - name: ubuntu
     image: ubuntu:latest

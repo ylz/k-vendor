@@ -1,8 +1,10 @@
-# changes for local-env
-apiVersion: apps/v1
+# changes for local env ubuntushift
+apiVersion: v1
 kind: Pod
 metadata:
   name: ubuntu
 spec:
-  std_in: true
-  tty: true
+  containers:
+  - name: ubuntu
+    stdin: true
+    tty: true
