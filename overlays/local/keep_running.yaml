@@ -1,0 +1,8 @@
+# changes for local-env
+apiVersion: apps/v1
+kind: Pod
+metadata:
+  name: ubuntu
+spec:
+  std_in: true
+  tty: true

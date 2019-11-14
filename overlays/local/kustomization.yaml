@@ -1,0 +1,5 @@
+# Kustomize control file for Overlay
+bases:
+- ../../base
+patches:
+- keep_running.yaml

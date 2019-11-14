@@ -1,0 +1,3 @@
+# Kustomize control file
+resources:
+- ubuntushift.yml

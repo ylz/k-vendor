@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu
+  label:
+    name: ubuntu
+spec:
+  securityContext:
+  containers:
+  - name: ubuntu
+    image: ubuntu:latest
+    # Just spin & wait forever
+    #command: [ "/bin/bash", "-c", "--" ]
+    #args: [ "while true; do sleep 30; done;" ]
+    stdin: false
+    tty: false
