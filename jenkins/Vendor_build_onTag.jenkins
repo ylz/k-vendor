@@ -1,0 +1,23 @@
+/*
+Vendor_build_onTag
+- is started when a new tag is pushed
+- sends the tag to the following additional builds:
+- calls security scanning
+- does da deploy
+*/
+
+pipeline {
+  agent any
+  stages {
+    stage('Init') {
+    }
+    stage('call_delivery_scanning') {
+      steps {
+        build(job: 'delivery_scanning')
+      }
+    }
+    stage('call_deploy_DEV') {
+        build(job: 'deploy_DEV')
+    }
+  }
+}
