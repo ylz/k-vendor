@@ -36,7 +36,12 @@ pipeline {
     stage('call_deploy_DEV') {
       steps {
         echo 'Run pipeline deploy_DEV'
-        build(job: '/buildPipelines/deploy_DEV')
+        build(
+          job: '/buildPipelines/deploy_DEV',
+          parameters: [
+            string(name: 'DeployVersion', value: env.TAG_NAME)
+          ]
+        )
       }
     }
   }
