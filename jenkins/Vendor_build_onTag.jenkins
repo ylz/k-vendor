@@ -9,6 +9,12 @@ Vendor_build_onTag
 pipeline {
   agent any
   stages {
+    stage('Envs') {
+      echo '*************************************************************'
+      echo 'Show me all ENVS here:'
+      sh 'env'
+      echo '*************************************************************'
+    }
     stage('Init') {
       steps {
         echo 'Init'
