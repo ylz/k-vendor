@@ -17,13 +17,13 @@ pipeline {
     stage('call_delivery_scanning') {
       steps {
         echo 'Run pipeline delivery_scanning'
-        build(job: './delivery_scanning')
+        build(job: '/buildPipelines/delivery_scanning')
       }
     }
     stage('call_deploy_DEV') {
       steps {
         echo 'Run pipeline deploy_DEV'
-        build(job: 'deploy_DEV')
+        build(job: '/buildPipelines/deploy_DEV')
       }
     }
   }
