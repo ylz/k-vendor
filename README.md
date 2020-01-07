@@ -9,3 +9,4 @@ Silly test repository to try Kustomize for k8 with kind of a vendor/client split
 - release-0.1.3-456
 - release-0.1.4-1
 - p-a-01
+- release-0.1.111
