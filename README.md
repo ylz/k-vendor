@@ -12,3 +12,4 @@ Silly test repository to try Kustomize for k8 with kind of a vendor/client split
 - release-0.1.111
 - release-0.1.112 2nd try
 - release-0.1.113
+- release-0.1.114
